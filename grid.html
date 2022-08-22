@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <style>
+      .boxes {
+        border: 2px solid green;
+      }
+
+      .box-one {
+        background: yellow;
+        height: 100px;
+      }
+
+      .box-two {
+        background: blueviolet;
+        height: 100px;
+      }
+      @media screen and (min-width: 768px) {
+        .grid {
+          display: grid;
+        }
+
+        .grid--1x2 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+    <div class="grid grid--1x2 boxes">
+      <div class="box box-one"></div>
+      <div class="box box-two"></div>
+    </div>
+  </body>
+</html>
